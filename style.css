@@ -74,6 +74,7 @@ text-align:centre;
 margin-top:2em;
 margin-bottom:2em;
 margin-left:180px;
+box-shadow: #ddd;
 }
 .more-articles h4{
     font-family: Roboto Slab;
