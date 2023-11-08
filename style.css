@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
 body{
-    width: 7.5in;
+    max-width: 7.5in;
     background: #eee;
+    margin: auto;
+
 }
 header div{
     font-family:helvetica;
@@ -21,14 +23,18 @@ h5{
     font-family: Helvetica;
     
 }
+    /* navigational bar begins here*/
 nav{
     text-align: center;
-    opacity: 0.5;
+    position: sticky;
+    top:0%;
+    background: white;
 }
 nav ul{
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 1em;
+  
 }
 nav ul li{
     list-style: none;
@@ -66,16 +72,71 @@ section img{
 }
 .newspaper-container{
 background:white;
-width: 900px;
+max-width: 900px;
 padding: 1em;
 border-radius: 10px;
 box-sizing:border-box;
 text-align:centre;
-margin-top:2em;
-margin-bottom:2em;
-margin-left:180px;
-box-shadow: #ddd;
+box-shadow:5px 5px 5px #ddd;
 }
 .more-articles h4{
     font-family: Roboto Slab;
 }
+/* the second section starts here and we are using the css grid*/
+
+.grid-container{
+    width: 90%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:10px;
+    border:1px solid #0f0404 ;
+    margin:0%;
+    margin-bottom:1em ;
+
+}
+.grid-container article{
+    border: 2px solid green;
+    font-family: Source Sans Pro;
+}
+
+footer{
+    background: black ;
+    text-align: center;
+    color: white;
+}
+                    /*  footer begins here*/
+footer p{
+    font-family: Source Sans Pro;
+}
+footer ul li{
+    list-style :none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+footer div {
+    width: 45%;
+    display: inline-block;
+    margin-top: 0%;
+}
+footer div h6{
+    margin:0%;
+}
+.list div{
+    display: inline-block;
+    width: 40%
+}
+.list div li{
+    list-style: none;
+    
+}
+.list div li a{
+    text-decoration:none ;
+    color: white;
+    font-family: Source Sans Pro;
+}
+/* .copyright{
+width:100%;
+} */
